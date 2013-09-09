@@ -44,7 +44,7 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.AbstractSpanAnnotation</name>
-      <description>An abstract Annotation type for Annotations that cover text spans (as opposed to other media such as images or video).</description>
+      <description>An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).</description>
       <supertypeName>qa.AbstractAnnotation</supertypeName>
       <features>
         <featureDescription>
@@ -88,7 +88,7 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.NGram</name>
-      <description>An Annotation type used to annotate NGrams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.</description>
+      <description>An Annotation type used to annotate n-grams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
       <features>
         <featureDescription>
@@ -102,7 +102,7 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.AnswerScore</name>
-      <description>An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).</description>
+      <description>An Annotation type used to annotate answers with their scores (computed during the answer scoring phase).</description>
       <supertypeName>qa.Sentence</supertypeName>
       <features>
         <featureDescription>
