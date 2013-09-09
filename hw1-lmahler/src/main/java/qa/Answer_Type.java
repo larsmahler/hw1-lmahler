@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** An Annotation type used to annotate answers to questions.
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
  * @generated */
 public class Answer_Type extends Sentence_Type {
   /** @generated */

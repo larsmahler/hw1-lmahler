@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation.
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
  * @generated */
 public class AbstractAnnotation_Type extends Annotation_Type {
   /** @generated */

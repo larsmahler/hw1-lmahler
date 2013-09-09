@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** An abstract Annotation type for Annotations that cover text spans (as opposed to other media such as images or video).
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
+/** An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
  * @generated */
 public class AbstractSpanAnnotation_Type extends AbstractAnnotation_Type {
   /** @generated */

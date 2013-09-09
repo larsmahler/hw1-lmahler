@@ -11,7 +11,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** An Annotation type used to annotate sentences.
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
  * @generated */
 public class Sentence_Type extends AbstractSpanAnnotation_Type {
   /** @generated */

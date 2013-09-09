@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
+/** An Annotation type used to annotate answers with their scores (computed during the answer scoring phase).
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
  * @generated */
 public class AnswerScore_Type extends Sentence_Type {
   /** @generated */

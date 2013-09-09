@@ -9,9 +9,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).
- * Updated by JCasGen Sun Sep 08 20:20:13 EDT 2013
- * XML source: C:/Users/Lars/workspace_kepler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
+/** An Annotation type used to annotate answers with their scores (computed during the answer scoring phase).
+ * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
+ * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AnswerScore extends Sentence {
   /** @generated
