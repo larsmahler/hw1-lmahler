@@ -9,7 +9,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 /** The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation.
- * Updated by JCasGen Sun Sep 08 20:50:41 EDT 2013
+ * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AbstractAnnotation extends Annotation {

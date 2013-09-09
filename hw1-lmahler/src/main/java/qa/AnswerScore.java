@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** An Annotation type used to annotate answers with their scores (computed during the answer scoring phase).
- * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
+/** An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).
+ * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AnswerScore extends Sentence {
@@ -64,14 +64,14 @@ public class AnswerScore extends Sentence {
   //*--------------*
   //* Feature: score
 
-  /** getter for score - gets The score of the Answer, computed during the answer scoring phase.
+  /** getter for score - gets the score of the Answer, computed during the answer scoring phase.
    * @generated */
   public double getScore() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_score == null)
       jcasType.jcas.throwFeatMissing("score", "qa.AnswerScore");
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_score);}
     
-  /** setter for score - sets The score of the Answer, computed during the answer scoring phase. 
+  /** setter for score - sets the score of the Answer, computed during the answer scoring phase. 
    * @generated */
   public void setScore(double v) {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_score == null)
@@ -82,14 +82,14 @@ public class AnswerScore extends Sentence {
   //*--------------*
   //* Feature: answer
 
-  /** getter for answer - gets A pointer to the Answer associated with this AnswerScore.
+  /** getter for answer - gets a pointer to the Answer associated with this AnswerScore.
    * @generated */
   public Answer getAnswer() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_answer == null)
       jcasType.jcas.throwFeatMissing("answer", "qa.AnswerScore");
     return (Answer)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_answer)));}
     
-  /** setter for answer - sets A pointer to the Answer associated with this AnswerScore. 
+  /** setter for answer - sets a pointer to the Answer associated with this AnswerScore. 
    * @generated */
   public void setAnswer(Answer v) {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_answer == null)

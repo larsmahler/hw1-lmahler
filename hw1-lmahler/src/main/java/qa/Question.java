@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** An Annotation type used to annotate questions.
- * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
+/** An Annotation type used to annotate Questions.
+ * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Question extends Sentence {

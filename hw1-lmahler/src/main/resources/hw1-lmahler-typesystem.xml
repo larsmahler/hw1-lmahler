@@ -32,12 +32,12 @@ Output Types: N/a (text file or print results to screen)</description>
       <features>
         <featureDescription>
           <name>source</name>
-          <description>The UIMA Analysis Engine (or other source) that generated this annotation.</description>
+          <description>the UIMA Analysis Engine (or other source) that generated this annotation.</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>confidence</name>
-          <description>The confidence level of the Annotation. Although there is no upper or lower bound on this feature, the confidence level is expected to fall within the range [0.0, 1.0].</description>
+          <description>the confidence level of the Annotation. Although there is no upper or lower bound on this value, the confidence level is expected to fall within the range [0.0, 1.0].</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
@@ -49,51 +49,51 @@ Output Types: N/a (text file or print results to screen)</description>
       <features>
         <featureDescription>
           <name>begin</name>
-          <description>The offset (from the beginning of the document) that indicates where the text span begins.</description>
+          <description>the offset (from the beginning of the document) that indicates where the text span begins.</description>
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>end</name>
-          <description>The offset (from the beginning of the document) that indicates where the text span ends.</description>
+          <description>the offset (from the beginning of the document) that indicates where the text span ends.</description>
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
       <name>qa.Sentence</name>
-      <description>An Annotation type used to annotate sentences.</description>
+      <description>An Annotation type used to annotate Sentences.</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Token</name>
-      <description>An Annotation type used to annotate tokens within sentences.</description>
+      <description>An Annotation type used to annotate Tokens (within Sentences).</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Question</name>
-      <description>An Annotation type used to annotate questions.</description>
+      <description>An Annotation type used to annotate Questions.</description>
       <supertypeName>qa.Sentence</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Answer</name>
-      <description>An Annotation type used to annotate answers to questions.</description>
+      <description>An Annotation type used to annotate Answers to Questions.</description>
       <supertypeName>qa.Sentence</supertypeName>
       <features>
         <featureDescription>
           <name>isCorrect</name>
-          <description>Indicates that this Answer is the correct Answer to a Question.</description>
+          <description>boolean that indicates whether this Answer is the correct Answer to a Question.</description>
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
       <name>qa.NGram</name>
-      <description>An Annotation type used to annotate n-grams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.</description>
+      <description>An Annotation type used to annotate NGrams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.	</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
       <features>
         <featureDescription>
           <name>elements</name>
-          <description>Stores an array of all Tokens covered by the text span.</description>
+          <description>an array of all Tokens covered by the text span.</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>qa.Token</elementType>
           <multipleReferencesAllowed>true</multipleReferencesAllowed>
@@ -102,17 +102,17 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.AnswerScore</name>
-      <description>An Annotation type used to annotate answers with their scores (computed during the answer scoring phase).</description>
+      <description>An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).</description>
       <supertypeName>qa.Sentence</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
-          <description>The score of the Answer, computed during the answer scoring phase.</description>
+          <description>the score of the Answer, computed during the answer scoring phase.</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>answer</name>
-          <description>A pointer to the Answer associated with this AnswerScore.</description>
+          <description>a pointer to the Answer associated with this AnswerScore.</description>
           <rangeTypeName>qa.Answer</rangeTypeName>
         </featureDescription>
       </features>

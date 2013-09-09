@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).
- * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
+ * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AbstractSpanAnnotation extends AbstractAnnotation {
@@ -64,14 +64,14 @@ public class AbstractSpanAnnotation extends AbstractAnnotation {
   //*--------------*
   //* Feature: begin
 
-  /** getter for begin - gets The offset (from the beginning of the document) that indicates where the text span begins.
+  /** getter for begin - gets the offset (from the beginning of the document) that indicates where the text span begins.
    * @generated */
   public int getBegin() {
     if (AbstractSpanAnnotation_Type.featOkTst && ((AbstractSpanAnnotation_Type)jcasType).casFeat_begin == null)
       jcasType.jcas.throwFeatMissing("begin", "qa.AbstractSpanAnnotation");
     return jcasType.ll_cas.ll_getIntValue(addr, ((AbstractSpanAnnotation_Type)jcasType).casFeatCode_begin);}
     
-  /** setter for begin - sets The offset (from the beginning of the document) that indicates where the text span begins. 
+  /** setter for begin - sets the offset (from the beginning of the document) that indicates where the text span begins. 
    * @generated */
   public void setBegin(int v) {
     if (AbstractSpanAnnotation_Type.featOkTst && ((AbstractSpanAnnotation_Type)jcasType).casFeat_begin == null)
@@ -82,14 +82,14 @@ public class AbstractSpanAnnotation extends AbstractAnnotation {
   //*--------------*
   //* Feature: end
 
-  /** getter for end - gets The offset (from the beginning of the document) that indicates where the text span ends.
+  /** getter for end - gets the offset (from the beginning of the document) that indicates where the text span ends.
    * @generated */
   public int getEnd() {
     if (AbstractSpanAnnotation_Type.featOkTst && ((AbstractSpanAnnotation_Type)jcasType).casFeat_end == null)
       jcasType.jcas.throwFeatMissing("end", "qa.AbstractSpanAnnotation");
     return jcasType.ll_cas.ll_getIntValue(addr, ((AbstractSpanAnnotation_Type)jcasType).casFeatCode_end);}
     
-  /** setter for end - sets The offset (from the beginning of the document) that indicates where the text span ends. 
+  /** setter for end - sets the offset (from the beginning of the document) that indicates where the text span ends. 
    * @generated */
   public void setEnd(int v) {
     if (AbstractSpanAnnotation_Type.featOkTst && ((AbstractSpanAnnotation_Type)jcasType).casFeat_end == null)

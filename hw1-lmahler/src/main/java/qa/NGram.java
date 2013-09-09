@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.FSArray;
 
 
-/** An Annotation type used to annotate n-grams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.
- * Updated by JCasGen Sun Sep 08 20:50:42 EDT 2013
+/** An Annotation type used to annotate NGrams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.	
+ * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class NGram extends AbstractSpanAnnotation {
@@ -65,14 +65,14 @@ public class NGram extends AbstractSpanAnnotation {
   //*--------------*
   //* Feature: elements
 
-  /** getter for elements - gets Stores an array of all Tokens covered by the text span.
+  /** getter for elements - gets an array of all Tokens covered by the text span.
    * @generated */
   public FSArray getElements() {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "qa.NGram");
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements)));}
     
-  /** setter for elements - sets Stores an array of all Tokens covered by the text span. 
+  /** setter for elements - sets an array of all Tokens covered by the text span. 
    * @generated */
   public void setElements(FSArray v) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
