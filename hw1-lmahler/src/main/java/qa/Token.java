@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** An Annotation type used to annotate Tokens (within Sentences).
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+/** An Annotation type used to annotate the tokens within a {@link Sentence}.<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Token extends AbstractSpanAnnotation {

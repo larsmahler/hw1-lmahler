@@ -12,8 +12,11 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** An Annotation type used to annotate Answers to Questions.
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+/** An Annotation type used to annotate an answer to a {@link Question}.
+<p>
+The <b>isCorrect</b> boolean feature indicates whether the Answer is correct (1) or incorrect (0).
+<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * @generated */
 public class Answer_Type extends Sentence_Type {
   /** @generated */

@@ -13,8 +13,13 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation.
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+/** The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation. 
+<p>
+The <b>source</b> feature indicates the UIMA Analysis Engine (or other source) that generated this annotation. 
+<p>
+The  <b>confidence</b> feature indicates the confidence level of the Annotation. Although there is no upper or lower bound on this value, the confidence level is expected to fall within the range [0.0, 1.0].
+<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * @generated */
 public class AbstractAnnotation_Type extends Annotation_Type {
   /** @generated */

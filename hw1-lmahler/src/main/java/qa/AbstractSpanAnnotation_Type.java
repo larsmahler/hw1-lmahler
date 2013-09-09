@@ -13,7 +13,14 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+<p>
+Extends {@link AbstractAnnotation}. All other Annotations inherit from AbstractSpanAnnotation. 
+<p>
+The <b>begin</b> feature indicates the position (offset from the beginning of the document) that indicates where the text span begins.
+<p>
+The <b>end</b> feature indicates the position (offset from the beginning of the document) that indicates where the text span ends.
+<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * @generated */
 public class AbstractSpanAnnotation_Type extends AbstractAnnotation_Type {
   /** @generated */

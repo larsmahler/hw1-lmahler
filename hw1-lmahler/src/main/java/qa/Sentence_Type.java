@@ -10,8 +10,9 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** An Annotation type used to annotate Sentences.
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+/** An Annotation type used to annotate label sentences.
+<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * @generated */
 public class Sentence_Type extends AbstractSpanAnnotation_Type {
   /** @generated */

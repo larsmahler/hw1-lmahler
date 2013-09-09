@@ -27,7 +27,12 @@ Output Types: N/a (text file or print results to screen)</description>
   <types>
     <typeDescription>
       <name>qa.AbstractAnnotation</name>
-      <description>The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation.</description>
+      <description>The most abstract Annotation type in this namespace. All other Annotations inherit from AbstractAnnotation. 
+&lt;p&gt;
+The &lt;b&gt;source&lt;/b&gt; feature indicates the UIMA Analysis Engine (or other source) that generated this annotation. 
+&lt;p&gt;
+The  &lt;b&gt;confidence&lt;/b&gt; feature indicates the confidence level of the Annotation. Although there is no upper or lower bound on this value, the confidence level is expected to fall within the range [0.0, 1.0].
+&lt;p&gt;</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
@@ -44,7 +49,14 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.AbstractSpanAnnotation</name>
-      <description>An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).</description>
+      <description>An abstract Annotation type for annotations that cover text spans (as opposed to other media such as images or video).
+&lt;p&gt;
+Extends {@link AbstractAnnotation}. All other Annotations inherit from AbstractSpanAnnotation. 
+&lt;p&gt;
+The &lt;b&gt;begin&lt;/b&gt; feature indicates the position (offset from the beginning of the document) that indicates where the text span begins.
+&lt;p&gt;
+The &lt;b&gt;end&lt;/b&gt; feature indicates the position (offset from the beginning of the document) that indicates where the text span ends.
+&lt;p&gt;</description>
       <supertypeName>qa.AbstractAnnotation</supertypeName>
       <features>
         <featureDescription>
@@ -61,22 +73,27 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.Sentence</name>
-      <description>An Annotation type used to annotate Sentences.</description>
+      <description>An Annotation type used to annotate label sentences.
+&lt;p&gt;</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Token</name>
-      <description>An Annotation type used to annotate Tokens (within Sentences).</description>
+      <description>An Annotation type used to annotate the tokens within a {@link Sentence}.&lt;p&gt;</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Question</name>
-      <description>An Annotation type used to annotate Questions.</description>
+      <description>An Annotation type used to annotate {@link Sentence} types that are questions.
+&lt;p&gt;</description>
       <supertypeName>qa.Sentence</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>qa.Answer</name>
-      <description>An Annotation type used to annotate Answers to Questions.</description>
+      <description>An Annotation type used to annotate an answer to a {@link Question}.
+&lt;p&gt;
+The &lt;b&gt;isCorrect&lt;/b&gt; boolean feature indicates whether the Answer is correct (1) or incorrect (0).
+&lt;p&gt;</description>
       <supertypeName>qa.Sentence</supertypeName>
       <features>
         <featureDescription>
@@ -88,7 +105,8 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.NGram</name>
-      <description>An Annotation type used to annotate NGrams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.	</description>
+      <description>An Annotation type used to annotate n-grams (series of consecutive {@link Token} types). The &lt;b&gt;elements&lt;/b&gt; feature stores an array of all {@link Token} elements covered by the text span.
+&lt;p&gt;</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
       <features>
         <featureDescription>
@@ -102,7 +120,10 @@ Output Types: N/a (text file or print results to screen)</description>
     </typeDescription>
     <typeDescription>
       <name>qa.AnswerScore</name>
-      <description>An Annotation type used to annotate Answers with their scores (computed during the answer scoring phase).</description>
+      <description>An Annotation type used to annotate an {@link Answer} with its score (computed during the answer scoring phase).
+&lt;p&gt;
+The &lt;b&gt;score&lt;/b&gt; feature stores the score associated with the &lt;b&gt;answer&lt;/b&gt; (pointer to an {@link Answer}).
+&lt;p&gt;</description>
       <supertypeName>qa.Sentence</supertypeName>
       <features>
         <featureDescription>

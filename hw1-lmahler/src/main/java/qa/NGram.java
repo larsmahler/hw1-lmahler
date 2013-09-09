@@ -10,8 +10,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.FSArray;
 
 
-/** An Annotation type used to annotate NGrams (series of consecutive Tokens). Although this type inherits from AbstractSpanAnnotation (thus annotating a single span of text), the elements feature stores an array of all Tokens covered by the text span.	
- * Updated by JCasGen Sun Sep 08 20:56:40 EDT 2013
+/** An Annotation type used to annotate n-grams (series of consecutive {@link Token} types). The <b>elements</b> feature stores an array of all {@link Token} elements covered by the text span.
+<p>
+ * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class NGram extends AbstractSpanAnnotation {
