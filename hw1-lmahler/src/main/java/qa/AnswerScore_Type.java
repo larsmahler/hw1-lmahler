@@ -16,7 +16,7 @@ import org.apache.uima.cas.Feature;
 <p>
 The <b>score</b> feature stores the score associated with the <b>answer</b> (pointer to an {@link Answer}).
 <p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * @generated */
 public class AnswerScore_Type extends Sentence_Type {
   /** @generated */

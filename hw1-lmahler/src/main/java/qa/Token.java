@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** An Annotation type used to annotate the tokens within a {@link Sentence}.<p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Token extends AbstractSpanAnnotation {
@@ -116,7 +116,7 @@ public class Token extends AbstractSpanAnnotation {
   //*--------------*
   //* Feature: orthographicShape
 
-  /** getter for orthographicShape - gets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+  /** getter for orthographicShape - gets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are types commonly used in other applications:
 <p>
 - upperInitial - initial letter is uppercase, rest are lowercase<br>
 - allCaps - all uppercase letters<br>
@@ -128,7 +128,7 @@ public class Token extends AbstractSpanAnnotation {
       jcasType.jcas.throwFeatMissing("orthographicShape", "qa.Token");
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_orthographicShape);}
     
-  /** setter for orthographicShape - sets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+  /** setter for orthographicShape - sets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are types commonly used in other applications:
 <p>
 - upperInitial - initial letter is uppercase, rest are lowercase<br>
 - allCaps - all uppercase letters<br>

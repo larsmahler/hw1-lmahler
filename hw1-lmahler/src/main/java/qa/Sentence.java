@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** An Annotation type used to annotate label sentences.
 <p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Sentence extends AbstractSpanAnnotation {

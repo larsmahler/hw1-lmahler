@@ -14,7 +14,7 @@ The <b>source</b> feature indicates the UIMA Analysis Engine (or other source) t
 <p>
 The  <b>confidence</b> feature indicates the confidence level of the Annotation. Although there is no upper or lower bound on this value, the confidence level is expected to fall within the range [0.0, 1.0].
 <p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AbstractAnnotation extends Annotation {

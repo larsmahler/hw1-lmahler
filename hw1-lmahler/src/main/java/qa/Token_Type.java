@@ -14,7 +14,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** An Annotation type used to annotate the tokens within a {@link Sentence}.<p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * @generated */
 public class Token_Type extends AbstractSpanAnnotation_Type {
   /** @generated */

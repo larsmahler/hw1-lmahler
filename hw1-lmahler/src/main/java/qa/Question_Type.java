@@ -12,7 +12,7 @@ import org.apache.uima.cas.Type;
 
 /** An Annotation type used to annotate {@link Sentence} types that are questions.
 <p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * @generated */
 public class Question_Type extends Sentence_Type {
   /** @generated */

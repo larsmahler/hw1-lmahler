@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 
 /** An Annotation type used to annotate n-grams (series of consecutive {@link Token} types). The <b>elements</b> feature stores an array of all {@link Token} elements covered by the text span.
 <p>
- * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:52:52 EDT 2013
  * @generated */
 public class NGram_Type extends AbstractSpanAnnotation_Type {
   /** @generated */
