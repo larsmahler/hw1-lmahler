@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** An Annotation type used to annotate the tokens within a {@link Sentence}.<p>
- * Updated by JCasGen Wed Sep 11 11:30:03 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Token extends AbstractSpanAnnotation {
@@ -118,10 +118,10 @@ public class Token extends AbstractSpanAnnotation {
 
   /** getter for orthographicShape - gets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
 <p>
-- upperInitial - initial letter is uppercase, rest are lowercase
-- allCaps - all uppercase letters
-- lowerCase - all lowercase letters
-- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories
+- upperInitial - initial letter is uppercase, rest are lowercase<br>
+- allCaps - all uppercase letters<br>
+- lowerCase - all lowercase letters<br>
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories<br>
    * @generated */
   public String getOrthographicShape() {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_orthographicShape == null)
@@ -130,10 +130,10 @@ public class Token extends AbstractSpanAnnotation {
     
   /** setter for orthographicShape - sets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
 <p>
-- upperInitial - initial letter is uppercase, rest are lowercase
-- allCaps - all uppercase letters
-- lowerCase - all lowercase letters
-- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories 
+- upperInitial - initial letter is uppercase, rest are lowercase<br>
+- allCaps - all uppercase letters<br>
+- lowerCase - all lowercase letters<br>
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories<br> 
    * @generated */
   public void setOrthographicShape(String v) {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_orthographicShape == null)

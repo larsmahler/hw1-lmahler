@@ -12,7 +12,7 @@ import org.apache.uima.cas.Type;
 
 /** An Annotation type used to annotate label sentences.
 <p>
- * Updated by JCasGen Wed Sep 11 11:30:03 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
  * @generated */
 public class Sentence_Type extends AbstractSpanAnnotation_Type {
   /** @generated */

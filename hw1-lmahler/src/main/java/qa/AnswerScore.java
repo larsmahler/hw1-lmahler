@@ -13,7 +13,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 <p>
 The <b>score</b> feature stores the score associated with the <b>answer</b> (pointer to an {@link Answer}).
 <p>
- * Updated by JCasGen Wed Sep 11 11:30:02 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:36:55 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class AnswerScore extends Sentence {

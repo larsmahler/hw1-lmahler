@@ -99,12 +99,12 @@ The &lt;b&gt;end&lt;/b&gt; feature indicates the position (offset from the begin
         </featureDescription>
         <featureDescription>
           <name>orthographicShape</name>
-          <description>the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+          <description>the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are types commonly used in other applications:
 &lt;p&gt;
-- upperInitial - initial letter is uppercase, rest are lowercase
-- allCaps - all uppercase letters
-- lowerCase - all lowercase letters
-- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories</description>
+- upperInitial - initial letter is uppercase, rest are lowercase&lt;br&gt;
+- allCaps - all uppercase letters&lt;br&gt;
+- lowerCase - all lowercase letters&lt;br&gt;
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories&lt;br&gt;</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
