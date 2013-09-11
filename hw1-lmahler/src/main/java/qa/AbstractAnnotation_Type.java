@@ -19,7 +19,7 @@ The <b>source</b> feature indicates the UIMA Analysis Engine (or other source) t
 <p>
 The  <b>confidence</b> feature indicates the confidence level of the Annotation. Although there is no upper or lower bound on this value, the confidence level is expected to fall within the range [0.0, 1.0].
 <p>
- * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:30:02 EDT 2013
  * @generated */
 public class AbstractAnnotation_Type extends Annotation_Type {
   /** @generated */

@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** An Annotation type used to annotate the tokens within a {@link Sentence}.<p>
- * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:30:03 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Token extends AbstractSpanAnnotation {
@@ -59,6 +59,86 @@ public class Token extends AbstractSpanAnnotation {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+  //*--------------*
+  //* Feature: word
+
+  /** getter for word - gets the raw text string annotated by the {@link Token}.
+   * @generated */
+  public String getWord() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_word == null)
+      jcasType.jcas.throwFeatMissing("word", "qa.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_word);}
+    
+  /** setter for word - sets the raw text string annotated by the {@link Token}. 
+   * @generated */
+  public void setWord(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_word == null)
+      jcasType.jcas.throwFeatMissing("word", "qa.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_word, v);}    
+   
+    
+  //*--------------*
+  //* Feature: stem
+
+  /** getter for stem - gets the word stem of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "living", the word stem (Token.stem) would be "liv".
+   * @generated */
+  public String getStem() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_stem == null)
+      jcasType.jcas.throwFeatMissing("stem", "qa.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_stem);}
+    
+  /** setter for stem - sets the word stem of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "living", the word stem (Token.stem) would be "liv". 
+   * @generated */
+  public void setStem(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_stem == null)
+      jcasType.jcas.throwFeatMissing("stem", "qa.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_stem, v);}    
+   
+    
+  //*--------------*
+  //* Feature: pos
+
+  /** getter for pos - gets the Part of Speech of text string annotated by the {@link Token}. Ex: DT (determiner), NN (noun), etc.
+   * @generated */
+  public String getPos() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "qa.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_pos);}
+    
+  /** setter for pos - sets the Part of Speech of text string annotated by the {@link Token}. Ex: DT (determiner), NN (noun), etc. 
+   * @generated */
+  public void setPos(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "qa.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_pos, v);}    
+   
+    
+  //*--------------*
+  //* Feature: orthographicShape
+
+  /** getter for orthographicShape - gets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+<p>
+- upperInitial - initial letter is uppercase, rest are lowercase
+- allCaps - all uppercase letters
+- lowerCase - all lowercase letters
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories
+   * @generated */
+  public String getOrthographicShape() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_orthographicShape == null)
+      jcasType.jcas.throwFeatMissing("orthographicShape", "qa.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_orthographicShape);}
+    
+  /** setter for orthographicShape - sets the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+<p>
+- upperInitial - initial letter is uppercase, rest are lowercase
+- allCaps - all uppercase letters
+- lowerCase - all lowercase letters
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories 
+   * @generated */
+  public void setOrthographicShape(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_orthographicShape == null)
+      jcasType.jcas.throwFeatMissing("orthographicShape", "qa.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_orthographicShape, v);}    
+  }
 
     

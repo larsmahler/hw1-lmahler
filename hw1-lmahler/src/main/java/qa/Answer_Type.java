@@ -16,7 +16,7 @@ import org.apache.uima.cas.Feature;
 <p>
 The <b>isCorrect</b> boolean feature indicates whether the Answer is correct (1) or incorrect (0).
 <p>
- * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:30:02 EDT 2013
  * @generated */
 public class Answer_Type extends Sentence_Type {
   /** @generated */

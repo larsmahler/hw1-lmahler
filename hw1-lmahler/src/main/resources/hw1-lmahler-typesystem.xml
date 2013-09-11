@@ -81,6 +81,33 @@ The &lt;b&gt;end&lt;/b&gt; feature indicates the position (offset from the begin
       <name>qa.Token</name>
       <description>An Annotation type used to annotate the tokens within a {@link Sentence}.&lt;p&gt;</description>
       <supertypeName>qa.AbstractSpanAnnotation</supertypeName>
+    <features>
+        <featureDescription>
+          <name>word</name>
+          <description>the raw text string annotated by the {@link Token}.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>stem</name>
+          <description>the word stem of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "living", the word stem (Token.stem) would be "liv".</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>pos</name>
+          <description>the Part of Speech of text string annotated by the {@link Token}. Ex: DT (determiner), NN (noun), etc.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>orthographicShape</name>
+          <description>the orthographic shape of text string annotated by the {@link Token}. For example, if the raw text string (Token.word) were "Living", the orthographic shape (Token.orthographicShape) would be "upperInitial". While orthographic shape types may be chosen by the user, here are type commonly used in other applications:
+&lt;p&gt;
+- upperInitial - initial letter is uppercase, rest are lowercase
+- allCaps - all uppercase letters
+- lowerCase - all lowercase letters
+- mixedCaps - any mixture of upper and lowercase letters not - included in the above categories</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>qa.Question</name>

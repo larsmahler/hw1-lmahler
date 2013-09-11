@@ -13,7 +13,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 <p>
 The <b>isCorrect</b> boolean feature indicates whether the Answer is correct (1) or incorrect (0).
 <p>
- * Updated by JCasGen Sun Sep 08 23:37:45 EDT 2013
+ * Updated by JCasGen Wed Sep 11 11:30:02 EDT 2013
  * XML source: C:/Users/Lars/git/hw1-lmahler/hw1-lmahler/src/main/resources/hw1-lmahler-typesystem.xml
  * @generated */
 public class Answer extends Sentence {
